@@ -99,7 +99,29 @@ The original baseline achieved 56.75% test accuracy.
 
 The final model improved test accuracy by
 **16.13 percentage points** on the same held-out fold.
+## Per-Class Classification Results
 
+The following results are from the held-out test set (fold 10).
+
+| Sound Category | Precision | Recall | F1-Score | Support |
+|---|---:|---:|---:|---:|
+| Air Conditioner | 0.551 | 0.590 | 0.570 | 100 |
+| Car Horn | 0.964 | 0.818 | 0.885 | 33 |
+| Children Playing | 0.601 | 0.950 | 0.736 | 100 |
+| Dog Bark | 0.779 | 0.670 | 0.720 | 100 |
+| Drilling | 0.680 | 0.510 | 0.583 | 100 |
+| Engine Idling | 0.683 | 0.763 | 0.721 | 93 |
+| Gun Shot | 0.968 | 0.938 | 0.952 | 32 |
+| Jackhammer | 0.862 | 0.844 | 0.853 | 96 |
+| Siren | 0.780 | 0.554 | 0.648 | 83 |
+| Street Music | 0.874 | 0.830 | 0.851 | 100 |
+| **Macro Average** | **0.774** | **0.747** | **0.752** | **837** |
+| **Weighted Average** | **0.743** | **0.729** | **0.727** | **837** |
+
+The model achieved **72.88% overall test accuracy**.
+Gun Shot had the highest F1-score (0.952), while
+Air Conditioner and Drilling were among the most
+challenging categories.
 ## Confusion Matrix
 
 ![Final Test Confusion Matrix](results/final_test_confusion_matrix.png)
