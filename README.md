@@ -110,7 +110,6 @@ The final model improved test accuracy by
 - models/ : Trained model and saved scaler
 - results/ : Evaluation metrics and confusion matrices
 - notebooks/ : Experiment notebook
-- docs/ : Additional documentation
 - requirements.txt : Python dependencies
 - README.md : Project documentation
 
